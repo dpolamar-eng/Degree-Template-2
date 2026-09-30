@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facility Details | Vanguard University</title>
+  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body style="background-color: var(--bg-slate);">
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar" role="banner">
+    <div class="container announcement-inner">
+      <div class="announcement-tags">
+        <span class="badge-tag">NAAC Grade A++ Accredited</span>
+        <span>Admissions Open for Academic Year 2026-27</span>
+      </div>
+      <div class="announcement-contact">
+        <span><i class="fa-solid fa-phone"></i> Helpline: +91 (080) 4900-1200</span>
+        <span><i class="fa-solid fa-envelope"></i> admissions@vanguard.edu</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header scrolled" role="navigation" aria-label="Main Navigation" style="background: rgba(11, 25, 44, 0.98);">
+    <div class="header-container header-inner">
+      <a href="/index.html" class="brand-logo" aria-label="Vanguard University Homepage">
+        <div class="logo-crest">V</div>
+        <div class="brand-text">
+          <h1>Vanguard University</h1>
+          <span>Autonomous • Estd. 1982</span>
+        </div>
+      </a>
+      <div class="header-actions">
+        <a href="/#campus" class="btn btn-secondary">
+          <i class="fa-solid fa-arrow-left"></i> Back to Campus Life
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: 80px;" id="facilityApp">
+    <!-- Hero Banner -->
+    <div style="position: relative; height: 380px; width: 100%; overflow: hidden; background: #0b192c;">
+      <img id="facImage" src="" alt="Facility" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.65;" />
+      <div style="position: absolute; inset: 0; background: linear-gradient(to top, #0b192c 0%, rgba(11, 25, 44, 0.4) 60%, transparent 100%);"></div>
+      <div class="container" style="position: absolute; bottom: 2rem; left: 0; right: 0; color: white; display: flex; flex-direction: column; align-items: flex-start;">
+        <span id="facKicker" style="font-size: 0.85rem; font-weight: 800; color: var(--vanguard-gold); text-transform: uppercase; letter-spacing: 0.08em; background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); padding: 0.35rem 0.85rem; border-radius: 20px;">
+        </span>
+        <h1 id="facTitle" style="font-size: 2.5rem; font-weight: 800; color: white; margin-top: 0.75rem; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+        </h1>
+      </div>
+    </div>
+
+    <div class="container" style="padding-top: 3rem; padding-bottom: 4rem;">
+      <div style="background: #ffffff; padding: 2.5rem; border-radius: var(--radius-xl); box-shadow: 0 10px 25px rgba(11, 25, 44, 0.08);">
+        
+        <!-- Stats Row -->
+        <div id="facStatsRow" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 2.5rem; background: #eef5fc; padding: 1.5rem; border-radius: var(--radius-lg); border: 1.5px solid #cbd5e1; text-align: center;">
+        </div>
+
+        <!-- Overview -->
+        <div style="margin-bottom: 2.5rem;">
+          <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--vanguard-navy); margin-bottom: 1rem;">
+            Facility Overview & Purpose
+          </h3>
+          <p id="facOverview" style="font-size: 1.05rem; color: #334155; line-height: 1.8;">
+          </p>
+        </div>
+
+        <!-- Key Features Grid -->
+        <div style="margin-bottom: 2.5rem;">
+          <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--vanguard-navy); margin-bottom: 1.25rem;">
+            Key Infrastructure & Technology Highlights
+          </h3>
+          <div id="facFeaturesGrid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+          </div>
+        </div>
+
+        <!-- Specs Table -->
+        <div style="margin-bottom: 3rem; background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: var(--radius-lg); overflow: hidden;">
+          <div style="background: var(--vanguard-navy); color: white; padding: 1rem 1.5rem; font-weight: 800; font-size: 1.1rem;">
+            Access Guidelines & Operational Specs
+          </div>
+          <div id="facSpecsBox" style="padding: 1.25rem 1.5rem;">
+          </div>
+        </div>
+
+        <!-- Bottom Action Bar -->
+        <div style="display: flex; gap: 1rem; align-items: center; justify-content: space-between; border-top: 1.5px solid #e2e8f0; padding-top: 2rem;">
+          <a href="/#campus" class="btn" style="background: #e2e8f0; color: var(--vanguard-navy); font-weight: 800; border: none; padding: 0.75rem 1.5rem; border-radius: var(--radius-md); cursor: pointer; text-decoration: none;">
+            <i class="fa-solid fa-arrow-left"></i> Back to Main Page
+          </a>
+          <button class="btn btn-primary" onclick="alert('Access Application Portal Initiated');" style="background: var(--vanguard-crimson); color: white; font-weight: 800; padding: 0.75rem 2rem; border-radius: var(--radius-md); cursor: pointer; border: none;">
+            <i class="fa-solid fa-paper-plane"></i> Apply for Facility Access Pass
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="/src/campus.js"></script>
+</body>
+</html>

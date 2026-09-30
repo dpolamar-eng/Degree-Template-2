@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanguard University | Multidisciplinary Science, Technology & Management</title>
+  <meta name="description" content="Vanguard University is a premier UGC-recognized NAAC A++ accredited autonomous institution offering degree programmes in Computer Science, AI, Cyber Security, FinTech, Biotech, Media & Design." />
+  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar" role="banner">
+    <div class="container announcement-inner">
+      <div class="announcement-tags">
+        <span class="badge-tag">NAAC Grade A++ Accredited</span>
+        <span>Admissions Open for Academic Year 2026-27</span>
+      </div>
+      <div class="announcement-contact">
+        <span><i class="fa-solid fa-phone"></i> Helpline: +91 (080) 4900-1200</span>
+        <span><i class="fa-solid fa-envelope"></i> admissions@vanguard.edu</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header" role="navigation" aria-label="Main Navigation">
+    <div class="header-container header-inner">
+      <a href="#" class="brand-logo" aria-label="Vanguard University Homepage">
+        <div class="logo-crest">V</div>
+        <div class="brand-text">
+          <h1>Vanguard University</h1>
+          <span>Autonomous • Estd. 1982</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#courses" class="nav-link">Courses</a></li>
+        <li><a href="#placements" class="nav-link">Placements</a></li>
+        <li><a href="#campus" class="nav-link">Campus Life</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <button class="btn-compare" id="openCompareBtn" aria-label="Compare Selected Programmes">
+          <i class="fa-solid fa-code-compare"></i> Compare
+          <span class="badge" id="compareCountBadge">0</span>
+        </button>
+        <button class="btn btn-primary" id="headerApplyBtn" aria-label="Apply Now for Admission">
+          <i class="fa-solid fa-paper-plane"></i> Apply Now
+        </button>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- HERO SECTION (FULL-PAGE BACKGROUND IMAGE) -->
+    <section class="hero-fullpage" id="hero">
+      <div class="container">
+        <div class="hero-fullpage-content">
+          <div class="hero-badge-pill">
+            <i class="fa-solid fa-award"></i> UGC Recognized • Category-1 Autonomous Status
+          </div>
+          <h1 class="hero-title">Vanguard University of Science & Technology</h1>
+          <p class="hero-description">
+            Shaping tomorrow's innovators, scientists, and corporate leaders through interdisciplinary education, state-of-the-art research labs, and industry partnerships.
+          </p>
+
+          <!-- Full Page Hero Level Pills & Search Box -->
+          <div class="hero-level-pills-row">
+            <button class="hero-level-btn level-btn active" data-level="Undergraduate"><i class="fa-solid fa-graduation-cap"></i> UG Degrees</button>
+            <button class="hero-level-btn level-btn" data-level="Postgraduate"><i class="fa-solid fa-user-graduate"></i> PG Degrees</button>
+          </div>
+
+          <div class="hero-search-box-full">
+            <div class="hero-search-input-wrapper">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="heroSearchInput" class="hero-search-input" placeholder="Search UG degrees e.g. 'B.Sc AI & Machine Learning'..." aria-label="Search degree courses" />
+            </div>
+            <button class="btn btn-primary" id="heroSearchBtn">Search Courses</button>
+          </div>
+
+          <div class="hero-quick-chips-white">
+            <span>Popular searches:</span>
+            <button class="chip-white" data-query="AI">AI & Machine Learning</button>
+            <button class="chip-white" data-query="Cyber">Cyber Security</button>
+            <button class="chip-white" data-query="FinTech">FinTech</button>
+            <button class="chip-white" data-query="Biotech">Biotech</button>
+            <button class="chip-white" data-query="UX">UX Design</button>
+          </div>
+
+          <!-- Hero Live Stat Banner -->
+          <div class="hero-stats-banner">
+            <div class="hero-stat-box">
+              <div class="num">96.8%</div>
+              <div class="lbl">Placement Rate</div>
+            </div>
+            <div class="hero-stat-box">
+              <div class="num">₹42.5 LPA</div>
+              <div class="lbl">Highest Package</div>
+            </div>
+            <div class="hero-stat-box">
+              <div class="num">15,000+</div>
+              <div class="lbl">Scholars Enrolled</div>
+            </div>
+            <div class="hero-stat-box">
+              <div class="num">NAAC A++</div>
+              <div class="lbl">Grade Accreditation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-text">
+          <span class="section-kicker">Who We Are</span>
+          <h2>A Legacy of Academic Excellence & Multidisciplinary Research</h2>
+          <p>
+            Established over four decades ago, Vanguard University has grown into one of the nation's premier autonomous institutions. Our academic framework integrates rigorous theoretical knowledge with hands-on practical learning in AI, computing, life sciences, business, and creative design.
+          </p>
+          <p style="font-size: 0.95rem; color: var(--text-muted);">
+            Recognized as a Category-1 Autonomous University by UGC and accredited with NAAC Grade A++, Vanguard offers students a vibrant 120-acre smart campus equipped with supercomputing centers, digital libraries, and incubator labs.
+          </p>
+
+          <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+            <a href="#courses" class="btn btn-secondary">Explore Programmes</a>
+            <button class="btn btn-primary" id="aboutApplyBtn">Apply for Admission</button>
+          </div>
+        </div>
+
+        <div>
+          <div class="pillars-grid">
+            <div class="pillar-card">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h4>Academic Rigor</h4>
+              <p>Industry-aligned syllabi updated annually with global university benchmarks.</p>
+            </div>
+            <div class="pillar-card">
+              <i class="fa-solid fa-flask-vial"></i>
+              <h4>R&D Labs</h4>
+              <p>State-of-the-art AI supercomputing, robotics, and molecular biology labs.</p>
+            </div>
+            <div class="pillar-card">
+              <i class="fa-solid fa-briefcase"></i>
+              <h4>Placement Cell</h4>
+              <p>Direct campus placement drives with 500+ corporate hiring partners.</p>
+            </div>
+            <div class="pillar-card">
+              <i class="fa-solid fa-coins"></i>
+              <h4>Merit Aid</h4>
+              <p>Up to 50% tuition fee waivers for meritorious qualifying score holders.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT COURSES WE OFFER SECTION -->
+    <section class="section-padding" id="courses">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">Academic Programmes</span>
+          <h2 class="section-title">What Courses We Offer</h2>
+          <p class="section-subtitle">Discover our accredited undergraduate (UG) and postgraduate (PG) degree options.</p>
+        </div>
+
+        <!-- Course Catalog Search & Filter Bar -->
+        <div class="catalog-filter-bar">
+          <!-- 1. TOP: ONLY UG AND PG DEGREE PILL BUTTONS (NO ALL DEGREES) -->
+          <div class="filter-pills-row" style="border-top: none; padding-top: 0; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border-light);">
+            <div class="level-pills">
+              <button class="level-btn active" data-level="Undergraduate"><i class="fa-solid fa-graduation-cap"></i> Undergraduate Degrees (UG)</button>
+              <button class="level-btn" data-level="Postgraduate"><i class="fa-solid fa-user-graduate"></i> Postgraduate Degrees (PG)</button>
+            </div>
+            <button class="catalog-counter" id="catalogCounter" style="cursor: pointer; border: 1px solid rgba(245, 158, 11, 0.4); outline: none;">Show More Courses</button>
+          </div>
+
+          <!-- 2. UNDERNEATH: SEARCH BAR WITH ROTATING PLACEHOLDERS -->
+          <div class="filter-controls-row">
+            <div class="filter-group">
+              <label for="catalogSearch">Search Course</label>
+              <input type="text" id="catalogSearch" class="filter-input" placeholder="Search UG degrees e.g. 'B.Sc AI & Machine Learning'..." />
+            </div>
+
+            <div class="filter-group">
+              <label for="durationFilter">Duration</label>
+              <select id="durationFilter" class="filter-select">
+                <option value="ALL">All Durations</option>
+                <option value="2">2 Years (PG)</option>
+                <option value="3">3 Years (UG)</option>
+                <option value="4">4 Years (Honours/Engineering)</option>
+              </select>
+            </div>
+            <div class="filter-group" style="justify-content: flex-end;">
+              <button class="btn btn-secondary btn-sm" id="resetFiltersBtn">
+                <i class="fa-solid fa-rotate-left"></i> Reset Filters
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course Cards Grid -->
+        <div class="programmes-grid" id="programmesGrid">
+          <!-- Dynamic JS Rendered Cards -->
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- PLACEMENTS & RECRUITER COMPANIES SECTION -->
+    <section class="section-padding placements-section" id="placements">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">Career Success</span>
+          <h2 class="section-title">Placements & Corporate Partners</h2>
+          <p class="section-subtitle">Our Career Development Directorate collaborates with over 500 top multinational companies and industry partners.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2.5rem; text-align: center;">
+          <div style="background: #ffffff; padding: 1.5rem; border-radius: var(--radius-lg); border: 1.5px solid #cbd5e1; border-top: 3.5px solid var(--vanguard-royal); box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);">
+            <div style="font-size: 2.15rem; font-weight: 800; color: var(--vanguard-navy);">96.8%</div>
+            <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Overall Placement Rate</div>
+          </div>
+          <div style="background: #ffffff; padding: 1.5rem; border-radius: var(--radius-lg); border: 1.5px solid #cbd5e1; border-top: 3.5px solid var(--vanguard-gold); box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);">
+            <div style="font-size: 2.15rem; font-weight: 800; color: var(--vanguard-royal);">₹42.5 LPA</div>
+            <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Highest Salary Package</div>
+          </div>
+          <div style="background: #ffffff; padding: 1.5rem; border-radius: var(--radius-lg); border: 1.5px solid #cbd5e1; border-top: 3.5px solid var(--vanguard-blue); box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);">
+            <div style="font-size: 2.15rem; font-weight: 800; color: var(--vanguard-navy);">₹9.2 LPA</div>
+            <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Average Starting Package</div>
+          </div>
+        </div>
+
+        <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--vanguard-navy); text-align: center; margin-bottom: 1.25rem;">
+          Top Corporate Hiring Partners
+        </h3>
+
+        <!-- Recruiter Logos Infinite Scrolling Marquee -->
+        <div class="recruiters-marquee-wrapper" style="display: flex; flex-direction: column; gap: 1rem;">
+          
+          <!-- Row 1: Left Scroll -->
+          <div class="recruiters-marquee-container">
+            <div class="marquee-track marquee-track-left">
+              <!-- Set 1 -->
+              <div class="recruiter-badge"><i class="fa-brands fa-microsoft" style="color: #00a4ef;"></i> Microsoft</div>
+              <div class="recruiter-badge"><i class="fa-brands fa-amazon" style="color: #ff9900;"></i> Amazon</div>
+              <div class="recruiter-badge"><i class="fa-brands fa-google" style="color: #4285f4;"></i> Google Cloud</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-building" style="color: #86bc25;"></i> Deloitte</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-network-wired" style="color: #1ba0d7;"></i> Cisco</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-piggy-bank" style="color: #db0011;"></i> HSBC</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-chart-line" style="color: #eb8c00;"></i> PwC</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-laptop-code" style="color: #ffe600;"></i> EY Tech</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-code" style="color: #007cc3;"></i> Infosys</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-microchip" style="color: #5c2d91;"></i> TCS Digital</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-briefcase" style="color: #00338d;"></i> KPMG</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-shield-halved" style="color: #054ada;"></i> IBM Security</div>
+              <div class="recruiter-badge"><i class="fa-brands fa-apple" style="color: #000000;"></i> Apple</div>
+              <div class="recruiter-badge"><i class="fa-brands fa-meta" style="color: #0467df;"></i> Meta</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-database" style="color: #f80000;"></i> Oracle</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-compass-drafting" style="color: #a100ff;"></i> Accenture</div>
+
+              <!-- Duplicate Set for Seamless Loop -->
+              <div class="recruiter-badge"><i class="fa-brands fa-microsoft" style="color: #00a4ef;"></i> Microsoft</div>
+              <div class="recruiter-badge"><i class="fa-brands fa-amazon" style="color: #ff9900;"></i> Amazon</div>
+              <div class="recruiter-badge"><i class="fa-brands fa-google" style="color: #4285f4;"></i> Google Cloud</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-building" style="color: #86bc25;"></i> Deloitte</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-network-wired" style="color: #1ba0d7;"></i> Cisco</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-piggy-bank" style="color: #db0011;"></i> HSBC</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-chart-line" style="color: #eb8c00;"></i> PwC</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-laptop-code" style="color: #ffe600;"></i> EY Tech</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-code" style="color: #007cc3;"></i> Infosys</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-microchip" style="color: #5c2d91;"></i> TCS Digital</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-briefcase" style="color: #00338d;"></i> KPMG</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-shield-halved" style="color: #054ada;"></i> IBM Security</div>
+              <div class="recruiter-badge"><i class="fa-brands fa-apple" style="color: #000000;"></i> Apple</div>
+              <div class="recruiter-badge"><i class="fa-brands fa-meta" style="color: #0467df;"></i> Meta</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-database" style="color: #f80000;"></i> Oracle</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-compass-drafting" style="color: #a100ff;"></i> Accenture</div>
+            </div>
+          </div>
+
+          <!-- Row 2: Right Scroll -->
+          <div class="recruiters-marquee-container">
+            <div class="marquee-track marquee-track-right">
+              <!-- Set 1 -->
+              <div class="recruiter-badge"><i class="fa-solid fa-coins" style="color: #d4af37;"></i> Goldman Sachs</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-chart-pie" style="color: #387ed1;"></i> Zerodha</div>
+              <div class="recruiter-badge"><i class="fa-brands fa-adobe" style="color: #ff0000;"></i> Adobe</div>
+              <div class="recruiter-badge"><i class="fa-brands fa-figma" style="color: #f24e1e;"></i> Figma</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-lock" style="color: #ff4500;"></i> CrowdStrike</div>
+              <div class="recruiter-badge"><i class="fa-brands fa-salesforce" style="color: #00a1e0;"></i> Salesforce</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-memory" style="color: #0071c5;"></i> Intel</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-eye" style="color: #76b900;"></i> Nvidia</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-landmark" style="color: #003366;"></i> Morgan Stanley</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-magnifying-glass-chart" style="color: #00205b;"></i> McKinsey & Co</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-bolt" style="color: #cc0000;"></i> Tesla</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-mobile-screen-button" style="color: #1428a0;"></i> Samsung</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-wifi" style="color: #3253dc;"></i> Qualcomm</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-server" style="color: #e21b22;"></i> Wipro</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-layer-group" style="color: #003399;"></i> Cognizant</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-cubes" style="color: #0070ad;"></i> Capgemini</div>
+
+              <!-- Duplicate Set for Seamless Loop -->
+              <div class="recruiter-badge"><i class="fa-solid fa-coins" style="color: #d4af37;"></i> Goldman Sachs</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-chart-pie" style="color: #387ed1;"></i> Zerodha</div>
+              <div class="recruiter-badge"><i class="fa-brands fa-adobe" style="color: #ff0000;"></i> Adobe</div>
+              <div class="recruiter-badge"><i class="fa-brands fa-figma" style="color: #f24e1e;"></i> Figma</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-lock" style="color: #ff4500;"></i> CrowdStrike</div>
+              <div class="recruiter-badge"><i class="fa-brands fa-salesforce" style="color: #00a1e0;"></i> Salesforce</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-memory" style="color: #0071c5;"></i> Intel</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-eye" style="color: #76b900;"></i> Nvidia</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-landmark" style="color: #003366;"></i> Morgan Stanley</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-magnifying-glass-chart" style="color: #00205b;"></i> McKinsey & Co</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-bolt" style="color: #cc0000;"></i> Tesla</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-mobile-screen-button" style="color: #1428a0;"></i> Samsung</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-wifi" style="color: #3253dc;"></i> Qualcomm</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-server" style="color: #e21b22;"></i> Wipro</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-layer-group" style="color: #003399;"></i> Cognizant</div>
+              <div class="recruiter-badge"><i class="fa-solid fa-cubes" style="color: #0070ad;"></i> Capgemini</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- CAMPUS LIFE & FACILITIES SECTION -->
+    <section class="section-padding" id="campus">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">Vibrant Student Experience</span>
+          <h2 class="section-title">Campus Life</h2>
+          <p class="section-subtitle">Experience a dynamic 120-acre smart campus built to foster academic innovation, sports excellence, and creative growth.</p>
+        </div>
+
+        <div class="campus-grid-container">
+          <div class="campus-card" data-facility="library" style="cursor: pointer;">
+            <img src="/images/facility_library.jpg" alt="Digital Library & Learning Resource Center" />
+            <div class="campus-card-body">
+              <span class="campus-card-kicker">24/7 Academic Hub</span>
+              <h4 class="campus-card-title">Central Digital Library</h4>
+              <p class="campus-card-desc">Housing 150,000+ volumes, IEEE digital subscriptions, silent study pods, and collaborative group research zones.</p>
+              <div style="margin-top: 0.85rem; font-size: 0.8rem; font-weight: 800; color: var(--vanguard-royal); display: flex; align-items: center; gap: 0.35rem;">
+                <span>Explore Facility Landing Page</span> <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="campus-card" data-facility="lab" style="cursor: pointer;">
+            <img src="/images/facility_lab.jpg" alt="Advanced AI & Supercomputing Center" />
+            <div class="campus-card-body">
+              <span class="campus-card-kicker">High-Performance Computing</span>
+              <h4 class="campus-card-title">NVIDIA AI & Robotics Labs</h4>
+              <p class="campus-card-desc">GPU cluster server nodes, IoT development kits, 3D rapid prototyping workstations, and cyber defense war-rooms.</p>
+              <div style="margin-top: 0.85rem; font-size: 0.8rem; font-weight: 800; color: var(--vanguard-royal); display: flex; align-items: center; gap: 0.35rem;">
+                <span>Explore Facility Landing Page</span> <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="campus-card" data-facility="sports" style="cursor: pointer;">
+            <img src="/images/campus_blr.jpg" alt="Sports Complex & Student Hostels" />
+            <div class="campus-card-body">
+              <span class="campus-card-kicker">Student Life & Wellness</span>
+              <h4 class="campus-card-title">Sports Arena & Hostels</h4>
+              <p class="campus-card-desc">Olympic-size swimming pool, indoor badminton courts, air-conditioned residential hostels, and multi-cuisine dining halls.</p>
+              <div style="margin-top: 0.85rem; font-size: 0.8rem; font-weight: 800; color: var(--vanguard-royal); display: flex; align-items: center; gap: 0.35rem;">
+                <span>Explore Facility Landing Page</span> <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="campus-card" data-facility="hub" style="cursor: pointer;">
+            <img src="/images/hero_campus.jpg" alt="Innovation & Venture Hub Incubation Center" />
+            <div class="campus-card-body">
+              <span class="campus-card-kicker">Incubation & Startups</span>
+              <h4 class="campus-card-title">Innovation & Venture Hub</h4>
+              <p class="campus-card-desc">Pre-seed funding support, patent filing assistance, startup mentorship, and Maker Space prototyping facilities.</p>
+              <div style="margin-top: 0.85rem; font-size: 0.8rem; font-weight: 800; color: var(--vanguard-royal); display: flex; align-items: center; gap: 0.35rem;">
+                <span>Explore Facility Landing Page</span> <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-slate); border: 1px solid var(--border-light); border-radius: var(--radius-xl); padding: 1.75rem; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; text-align: center;">
+          <div>
+            <div style="font-size: 1.75rem; font-weight: 800; color: var(--vanguard-navy);"><i class="fa-solid fa-hotel" style="color:var(--vanguard-gold);"></i> 5,000+</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; margin-top: 0.25rem;">Hostel Resident Capacity</div>
+          </div>
+          <div>
+            <div style="font-size: 1.75rem; font-weight: 800; color: var(--vanguard-navy);"><i class="fa-solid fa-basketball" style="color:var(--vanguard-gold);"></i> 14+</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; margin-top: 0.25rem;">Indoor & Outdoor Sports Courts</div>
+          </div>
+          <div>
+            <div style="font-size: 1.75rem; font-weight: 800; color: var(--vanguard-navy);"><i class="fa-solid fa-users-viewfinder" style="color:var(--vanguard-gold);"></i> 45+</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; margin-top: 0.25rem;">Student Clubs & Societies</div>
+          </div>
+          <div>
+            <div style="font-size: 1.75rem; font-weight: 800; color: var(--vanguard-navy);"><i class="fa-solid fa-wifi" style="color:var(--vanguard-gold);"></i> 10 Gbps</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; margin-top: 0.25rem;">Campus Wi-Fi Backbone</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section-padding" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Admissions Office</span>
+          <h2 class="section-title">Connect with Admissions Counselor</h2>
+          <p class="section-subtitle">Reach out for course counseling, hostel details, or campus visit scheduling.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;">
+          <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 1rem; color: var(--vanguard-navy);">Admissions Helpdesk</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+              <strong>Vanguard University Main Quadrangle</strong><br />
+              100 University Boulevard, Knowledge District, Bengaluru - 560098<br />
+              <strong>Hours:</strong> Mon - Sat: 9:00 AM - 5:30 PM
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem;">
+              <div><i class="fa-solid fa-phone" style="color:var(--vanguard-royal); margin-right: 0.5rem;"></i> Direct Line: +91 (080) 4900-1200</div>
+              <div><i class="fa-solid fa-envelope" style="color:var(--vanguard-royal); margin-right: 0.5rem;"></i> Email: admissions@vanguard.edu</div>
+            </div>
+          </div>
+
+          <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 1rem; color: var(--vanguard-navy);">Schedule Admission / Campus Tour</h3>
+            <form id="contactForm" onsubmit="return false;" style="display: flex; flex-direction: column; gap: 1rem;">
+              <div>
+                <label style="font-size: 0.775rem; font-weight: 700; text-transform: uppercase;" for="contactName">Full Name</label>
+                <input type="text" id="contactName" class="filter-input" placeholder="Enter student or parent name" required />
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div>
+                  <label style="font-size: 0.775rem; font-weight: 700; text-transform: uppercase;" for="contactEmail">Email</label>
+                  <input type="email" id="contactEmail" class="filter-input" placeholder="name@domain.com" required />
+                </div>
+                <div>
+                  <label style="font-size: 0.775rem; font-weight: 700; text-transform: uppercase;" for="contactPhone">Phone Number</label>
+                  <input type="tel" id="contactPhone" class="filter-input" placeholder="+91 9876543210" required />
+                </div>
+              </div>
+              <button class="btn btn-primary" type="submit" id="submitContactBtn">
+                <i class="fa-solid fa-calendar-check"></i> Apply for 2027 batch
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="font-size: 1.35rem; font-weight: 800; color: white; margin-bottom: 0.75rem;">Vanguard University</div>
+          <p style="font-size: 0.85rem; line-height: 1.6; margin-bottom: 1rem;">
+            A premier UGC-recognized NAAC Grade A++ accredited autonomous university dedicated to multidisciplinary science, technology, business, and creative design education.
+          </p>
+          <span class="badge-tag">Category-1 Autonomous Institution</span>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academic Courses</h4>
+          <ul class="footer-links">
+            <li><a href="#courses">B.Sc Computer Science (AI & ML)</a></li>
+            <li><a href="#courses">B.Tech Cyber Security</a></li>
+            <li><a href="#courses">M.Sc Data Science & Analytics</a></li>
+            <li><a href="#courses">MBA FinTech & Analytics</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Admissions</h4>
+          <ul class="footer-links">
+            <li><a href="#admissions">4-Step Admission Roadmap</a></li>
+            <li><a href="#scholarships">Tuition Fee Structure</a></li>
+            <li><a href="#scholarships">Merit Scholarships</a></li>
+            <li><a href="#contact">Contact Admissions Helpdesk</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Governance</h4>
+          <p style="font-size: 0.8rem; margin-bottom: 0.5rem;">NAAC Grade A++ | UGC & AICTE Recognized</p>
+          <p style="font-size: 0.8rem;">All data and figures are fictional for demonstration purposes.</p>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; text-align: center; font-size: 0.8rem;">
+        © 2026 Vanguard University of Science & Technology. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROGRAMME DETAIL MODAL -->
+  <div class="modal-overlay" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="modalProgrammeTitle">
+    <div class="modal-container">
+      <div class="modal-header-banner">
+        <button class="modal-close-btn" id="closeDetailModalBtn" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-title-area">
+          <h2 id="modalProgrammeTitle">Programme Title</h2>
+          <div class="modal-meta-pills">
+            <span class="modal-meta-pill" id="modalLevelPill">UG</span>
+            <span class="modal-meta-pill" id="modalDeptPill">School of Tech</span>
+            <span class="modal-meta-pill" id="modalDurationPill">3 Years</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-tabs-bar">
+        <button class="modal-tab-btn active" data-tab="tabOverview">Overview</button>
+        <button class="modal-tab-btn" data-tab="tabEligibility">Eligibility & Fees</button>
+        <button class="modal-tab-btn" data-tab="tabSyllabus">Curriculum & Syllabus</button>
+        <button class="modal-tab-btn" data-tab="tabCareers">Careers & Placements</button>
+        <button class="modal-tab-btn" data-tab="tabFaqs">FAQs</button>
+      </div>
+
+      <div class="modal-body-scroll">
+        <div class="tab-pane active" id="tabOverview">
+          <h3 style="font-size: 1.1rem; font-weight:800; margin-bottom:0.5rem; color:var(--vanguard-navy);">Course Overview</h3>
+          <p id="modalOverviewText" style="font-size:0.95rem; color:var(--text-muted); margin-bottom:1.5rem;"></p>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;" id="modalHighlightsGrid"></div>
+        </div>
+
+        <div class="tab-pane" id="tabEligibility">
+          <div style="background:var(--bg-slate); padding:1.25rem; border-radius:var(--radius-md); margin-bottom:1.5rem;">
+            <h4 style="font-size:1rem; font-weight:800; margin-bottom:0.5rem; color:var(--vanguard-navy);">Academic Eligibility</h4>
+            <p id="modalEligibilityDetails" style="font-size:0.9rem; color:var(--text-muted);"></p>
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.25rem;">
+            <div style="border:1px solid var(--border-light); padding:1.25rem; border-radius:var(--radius-md);">
+              <span style="font-size:0.75rem; font-weight:700; color:var(--text-light); text-transform:uppercase;">Annual Tuition Fee</span>
+              <div style="font-size:1.5rem; font-weight:800; color:var(--vanguard-navy);" id="modalFeeAnnual">₹0</div>
+              <span style="font-size:0.8rem; color:var(--text-muted);">Semester Fee: <span id="modalFeeSemester">₹0</span></span>
+            </div>
+            <div style="border:1px solid var(--border-light); padding:1.25rem; border-radius:var(--radius-md);">
+              <span style="font-size:0.75rem; font-weight:700; color:var(--text-light); text-transform:uppercase;">Scholarship Opportunity</span>
+              <div style="font-size:1.1rem; font-weight:800; color:var(--vanguard-crimson);">Up to 50% Tuition Waiver</div>
+              <span style="font-size:0.8rem; color:var(--text-muted);">Based on Merit Score</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="tabSyllabus">
+          <h3 style="font-size: 1.1rem; font-weight:800; margin-bottom:1rem; color:var(--vanguard-navy);">Semester-by-Semester Curriculum</h3>
+          <div class="syllabus-accordion" id="modalSyllabusAccordion"></div>
+        </div>
+
+        <div class="tab-pane" id="tabCareers">
+          <h3 style="font-size: 1.1rem; font-weight:800; margin-bottom:0.75rem; color:var(--vanguard-navy);">Graduate Career Roles</h3>
+          <div class="roles-wrapper" id="modalCareersList" style="margin-bottom:1.5rem;"></div>
+
+          <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:1rem; margin-bottom:1.5rem;">
+            <div style="background:var(--bg-slate); padding:1rem; border-radius:var(--radius-md); text-align:center;">
+              <div style="font-size:0.75rem; color:var(--text-light);">Placement Rate</div>
+              <div style="font-size:1.25rem; font-weight:800; color:var(--vanguard-navy);" id="modalPlacementRate">0%</div>
+            </div>
+            <div style="background:var(--bg-slate); padding:1rem; border-radius:var(--radius-md); text-align:center;">
+              <div style="font-size:0.75rem; color:var(--text-light);">Average CTC</div>
+              <div style="font-size:1.25rem; font-weight:800; color:var(--vanguard-navy);" id="modalAvgPackage">₹0</div>
+            </div>
+            <div style="background:var(--bg-slate); padding:1rem; border-radius:var(--radius-md); text-align:center;">
+              <div style="font-size:0.75rem; color:var(--text-light);">Highest Package</div>
+              <div style="font-size:1.25rem; font-weight:800; color:var(--vanguard-royal);" id="modalHighestPackage">₹0</div>
+            </div>
+          </div>
+
+          <h4 style="font-size:0.95rem; font-weight:800; margin-bottom:0.5rem; color:var(--vanguard-navy);">Top Hiring Companies</h4>
+          <div class="roles-wrapper" id="modalRecruitersList"></div>
+        </div>
+
+        <div class="tab-pane" id="tabFaqs">
+          <div id="modalFaqsList" style="display:flex; flex-direction:column; gap:1rem;"></div>
+        </div>
+      </div>
+
+      <div class="modal-footer-cta">
+        <div>
+          <span style="font-size:0.8rem; color:var(--text-light);">Admissions open for 2026-27</span>
+          <div style="font-weight:700; color:var(--vanguard-navy);">Vanguard University</div>
+        </div>
+        <button class="btn btn-primary" id="modalApplyNowBtn">Apply for this Course</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROGRAMME COMPARER MODAL -->
+  <div class="modal-overlay" id="compareModal" role="dialog" aria-modal="true">
+    <div class="modal-container" style="max-width:1050px;">
+      <div class="modal-header-banner">
+        <button class="modal-close-btn" id="closeCompareModalBtn" aria-label="Close compare modal"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-title-area">
+          <h2>Course Comparison Matrix</h2>
+          <p style="font-size:0.85rem; opacity:0.9;">Compare up to 3 selected degree courses side-by-side.</p>
+        </div>
+      </div>
+
+      <div class="modal-body-scroll">
+        <div class="comparison-table-wrapper" id="compareTableContainer"></div>
+      </div>
+
+      <div class="modal-footer-cta">
+        <button class="btn btn-secondary" id="clearCompareListBtn">Clear All Comparisons</button>
+        <button class="btn btn-primary" id="compareCloseBtn">Done Comparing</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- APPLICATION WIZARD MODAL -->
+  <div class="modal-overlay" id="applyModal" role="dialog" aria-modal="true">
+    <div class="modal-container" style="max-width:760px;">
+      <div class="modal-header-banner">
+        <button class="modal-close-btn" id="closeApplyModalBtn" aria-label="Close application modal"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-title-area">
+          <h2>Vanguard Online Application Form</h2>
+          <p style="font-size:0.85rem; opacity:0.9;">Academic Year 2026-27 Admission</p>
+        </div>
+      </div>
+
+      <div class="wizard-steps-header">
+        <div class="wizard-step-item active" id="wizStepHeader1"><div class="wizard-step-circle">1</div> Personal</div>
+        <div class="wizard-step-item" id="wizStepHeader2"><div class="wizard-step-circle">2</div> Course</div>
+        <div class="wizard-step-item" id="wizStepHeader3"><div class="wizard-step-circle">3</div> Academics</div>
+        <div class="wizard-step-item" id="wizStepHeader4"><div class="wizard-step-circle">4</div> Submit</div>
+      </div>
+
+      <div class="modal-body-scroll">
+        <form id="applyWizardForm" onsubmit="return false;">
+          <div class="wiz-step-panel active" id="wizStep1">
+            <h3 style="font-size:1.1rem; font-weight:800; margin-bottom:1rem; color:var(--vanguard-navy);">Step 1: Student Information</h3>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+              <div>
+                <label style="font-size:0.775rem; font-weight:700; text-transform:uppercase;" for="appFirstName">First Name</label>
+                <input type="text" id="appFirstName" class="filter-input" placeholder="e.g. Rahul" required />
+              </div>
+              <div>
+                <label style="font-size:0.775rem; font-weight:700; text-transform:uppercase;" for="appLastName">Last Name</label>
+                <input type="text" id="appLastName" class="filter-input" placeholder="e.g. Verma" required />
+              </div>
+              <div>
+                <label style="font-size:0.775rem; font-weight:700; text-transform:uppercase;" for="appEmail">Email Address</label>
+                <input type="email" id="appEmail" class="filter-input" placeholder="rahul@example.com" required />
+              </div>
+              <div>
+                <label style="font-size:0.775rem; font-weight:700; text-transform:uppercase;" for="appPhone">Phone Number</label>
+                <input type="tel" id="appPhone" class="filter-input" placeholder="+91 98765 43210" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="wiz-step-panel" id="wizStep2" style="display:none;">
+            <h3 style="font-size:1.1rem; font-weight:800; margin-bottom:1rem; color:var(--vanguard-navy);">Step 2: Select Course</h3>
+            <div>
+              <label style="font-size:0.775rem; font-weight:700; text-transform:uppercase;" for="appProgrammeSelect">Target Course</label>
+              <select id="appProgrammeSelect" class="filter-select" required></select>
+            </div>
+          </div>
+
+          <div class="wiz-step-panel" id="wizStep3" style="display:none;">
+            <h3 style="font-size:1.1rem; font-weight:800; margin-bottom:1rem; color:var(--vanguard-navy);">Step 3: Academic Score</h3>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+              <div>
+                <label style="font-size:0.775rem; font-weight:700; text-transform:uppercase;" for="appScore">10+2 / Grad Score (%)</label>
+                <input type="number" id="appScore" class="filter-input" min="40" max="100" placeholder="e.g. 88.5" required />
+              </div>
+              <div>
+                <label style="font-size:0.775rem; font-weight:700; text-transform:uppercase;" for="appBoard">Board / University</label>
+                <input type="text" id="appBoard" class="filter-input" placeholder="e.g. CBSE / State Board" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="wiz-step-panel" id="wizStep4" style="display:none;">
+            <div style="text-align:center; padding:1.5rem 0;" id="appSummaryBox"></div>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer-cta">
+        <button class="btn btn-secondary" id="wizBackBtn" style="display:none;">Back</button>
+        <button class="btn btn-primary" id="wizNextBtn">Next Step</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE STICKY BOTTOM BAR -->
+  <div class="mobile-bottom-bar" role="navigation" aria-label="Mobile Bottom Actions">
+    <a href="#courses" class="mobile-bar-item">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <span>Courses</span>
+    </a>
+    <button class="mobile-bar-item" id="mobileCompareBtn">
+      <i class="fa-solid fa-code-compare"></i>
+      <span>Compare (<span id="mobileCompareCount">0</span>)</span>
+    </button>
+    <a href="#contact" class="mobile-bar-item">
+      <i class="fa-solid fa-headset"></i>
+      <span>Enquire</span>
+    </a>
+    <button class="btn btn-primary mobile-bar-btn" id="mobileApplyBtn">
+      Apply Now
+    </button>
+  </div>
+
+  <!-- FACILITY DETAIL LANDING MODAL -->
+  <div class="modal-overlay" id="facilityModal" role="dialog" aria-modal="true" aria-labelledby="facilityModalTitle">
+    <div class="modal-container" style="max-width: 900px; padding: 0; overflow: hidden; border-radius: var(--radius-xl); background: #ffffff;">
+      <!-- Sticky Header with Back Button -->
+      <div style="position: sticky; top: 0; z-index: 25; background: rgba(11, 25, 44, 0.96); backdrop-filter: blur(12px); padding: 0.85rem 1.5rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.15);">
+        <button class="btn" id="closeFacilityBackBtn" style="background: var(--vanguard-gold); color: var(--vanguard-navy); font-weight: 800; font-size: 0.85rem; padding: 0.45rem 1.1rem; border-radius: 20px; border: none; display: inline-flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+          <i class="fa-solid fa-arrow-left"></i> Back to Campus Life
+        </button>
+        <button class="modal-close-btn" id="closeFacilityModalBtn" aria-label="Close Facility Landing Page" style="background: rgba(255,255,255,0.15); color: white; border: none; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; cursor: pointer;">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Facility Landing Content -->
+      <div id="facilityModalBody" style="max-height: 82vh; overflow-y: auto;">
+        <!-- Dynamic Facility Content -->
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
